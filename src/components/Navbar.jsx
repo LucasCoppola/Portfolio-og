@@ -12,7 +12,7 @@ const Navbar = () => {
 	return (
 		<header className="bg-gray-800 md:sticky top-0 z-10">
 			<div className="container mx-auto flex flex-wrap p-2 flex-col lg:px-20 md:flex-row md:justify-between items-center">
-				<div className="flex justify-between items-center w-full md:w-auto">
+				<div className="flex justify-between items-center w-full ">
 					<div className="flex-grow flex-shrink">
 						<a href="#about">
 							<img
