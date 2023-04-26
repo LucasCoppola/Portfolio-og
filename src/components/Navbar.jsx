@@ -24,16 +24,16 @@ const Navbar = () => {
 					</div>
 
 					<div className="hidden md:flex ml-auto">
-						<a href="#projects" className="block mt-4 md:mt-0 text-lg text-white hover:text-gray-400">
+						<a href="#projects" className="block mt-4 md:mt-0 text-lg text-white hover:text-green-300">
 							Home
 						</a>
-						<a href="#about" className="block mt-4 md:mt-0 ml-6 text-lg text-white hover:text-gray-400">
+						<a href="#about" className="block mt-4 md:mt-0 ml-6 text-lg text-white hover:text-green-300">
 							About
 						</a>
-						<a href="#skills" className="block mt-4 md:mt-0 ml-6 text-lg text-white hover:text-gray-400">
+						<a href="#skills" className="block mt-4 md:mt-0 ml-6 text-lg text-white hover:text-green-300">
 							Projects
 						</a>
-						<a href="#contact" className="block mt-4 md:mt-0 ml-6 text-lg text-white hover:text-gray-400">
+						<a href="#contact" className="block mt-4 md:mt-0 ml-6 text-lg text-white hover:text-green-300">
 							Contact
 						</a>
 					</div>

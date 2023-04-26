@@ -1,35 +1,111 @@
 import React from 'react'
+import { FaCode, FaDatabase, FaServer, FaUser } from 'react-icons/fa'
 
 const About = () => {
 	return (
-		<section id="about">
-			<div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
-				<div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center w-80 mx-8">
-					<h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-						Hi, I'm Lucas.
-						<br className="hidden lg:inline-block" />I Build Amazing Websites and Web Apps
-					</h1>
-					<p className="mb-8 leading-relaxed">
-						I'm a web developer with a passion for building beautiful and functional websites. Whether
-						you're looking for a skilled developer to join your team or to bring your project to life.
+		<section id="about" className="text-gray-600 body-font">
+			<h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-center text-white">About Me</h1>
+			<div className="flex flex-wrap justify-center items-center  p-10">
+				<div className="md:w-1/2 w-full md:pr-10 mb-10 md:mb-0">
+					<p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+						I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads
+						to the success of the overall product. Check out some of my work in the Projects section. I also
+						like sharing content related to the stuff that I have learned over the years in Web Development
+						so it can help other people of the Dev Community. Feel free to Connect or Follow me on my
+						Linkedin where I post useful content related to Web Development and Programming I'm open to Job
+						opportunities where I can contribute, learn and grow. If you have a good opportunity that
+						matches my skills and experience then don't hesitate to contact me.
 					</p>
-					<p className="mb-8 leading-relaxed">
-						Check out some of my work in the <b>Projects</b> section.
-					</p>
-
-					<div className="flex justify-center">
-						<a
-							href="#contact"
-							className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg"
-						>
-							Work With Me
-						</a>
-						<a
-							href="#projects"
-							className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"
-						>
-							See My Past Work
-						</a>
+				</div>
+				<div className="md:w-1/2 w-full">
+					<h5 className="text-xl font-bold text-gray-800 dark:text-white mb-4">
+						Here are a few technologies I’ve been working with recently
+					</h5>
+					<div className="flex flex-wrap justify-center">
+						<div className="p-2 w-1/2">
+							<div className="flex items-center">
+								<div className="w-10 h-10 bg-gray-200 rounded-full flex-shrink-0">
+									<FaCode className="text-gray-800 dark:text-white p-2" />
+								</div>
+								<div className="ml-4">
+									<h2 className="text-gray-900 dark:text-white title-font font-medium text-lg">
+										HTML/CSS
+									</h2>
+								</div>
+							</div>
+						</div>
+						<div className="p-2 w-1/2">
+							<div className="flex items-center">
+								<div className="w-10 h-10 bg-gray-200 rounded-full flex-shrink-0">
+									<FaCode className="text-gray-800 dark:text-white p-2" />
+								</div>
+								<div className="ml-4">
+									<h2 className="text-gray-900 dark:text-white title-font font-medium text-lg">
+										JavaScript
+									</h2>
+								</div>
+							</div>
+						</div>
+						<div className="p-2 w-1/2">
+							<div className="flex items-center">
+								<div className="w-10 h-10 bg-gray-200 rounded-full flex-shrink-0">
+									<FaCode className="text-gray-800 dark:text-white p-2" />
+								</div>
+								<div className="ml-4">
+									<h2 className="text-gray-900 dark:text-white title-font font-medium text-lg">
+										React
+									</h2>
+								</div>
+							</div>
+						</div>
+						<div className="p-2 w-1/2">
+							<div className="flex items-center">
+								<div className="w-10 h-10 bg-gray-200 rounded-full flex-shrink-0">
+									<FaCode className="text-gray-800 dark:text-white p-2" />
+								</div>
+								<div className="ml-4">
+									<h2 className="text-gray-900 dark:text-white title-font font-medium text-lg">
+										Node.js
+									</h2>
+								</div>
+							</div>
+						</div>
+						<div className="p-2 w-1/2">
+							<div className="flex items-center">
+								<div className="w-10 h-10 bg-gray-200 rounded-full flex-shrink-0">
+									<FaCode className="text-gray-800 dark:text-white p-2" />
+								</div>
+								<div className="ml-4">
+									<h2 className="text-gray-900 dark:text-white title-font font-medium text-lg">
+										Python
+									</h2>
+								</div>
+							</div>
+						</div>
+						<div className="p-2 w-1/2">
+							<div className="flex items-center">
+								<div className="w-10 h-10 bg-gray-200 rounded-full flex-shrink-0">
+									<FaCode className="text-gray-800 dark:text-white p-2" />
+								</div>
+								<div className="ml-4">
+									<h2 className="text-gray-900 dark:text-white title-font font-medium text-lg">
+										Java
+									</h2>
+								</div>
+							</div>
+						</div>
+						<div className="p-2 w-1/2">
+							<div className="flex items-center">
+								<div className="w-10 h-10 bg-gray-200 rounded-full flex-shrink-0">
+									<FaCode className="text-gray-800 dark:text-white p-2" />
+								</div>
+								<div className="ml-4">
+									<h2 className="text-gray-900 dark:text-white title-font font-medium text-lg">
+										SQL
+									</h2>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
