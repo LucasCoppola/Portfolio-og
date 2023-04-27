@@ -1,110 +1,61 @@
 import React from 'react'
-import { FaCode, FaDatabase, FaServer, FaUser } from 'react-icons/fa'
+import { skillsData } from '../data'
 
 const About = () => {
 	return (
-		<section id="about" className="text-gray-600 body-font">
-			<h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-center text-white">About Me</h1>
-			<div className="flex flex-wrap justify-center items-center  p-10">
-				<div className="md:w-1/2 w-full md:pr-10 mb-10 md:mb-0">
-					<p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-						I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads
-						to the success of the overall product. Check out some of my work in the Projects section. I also
-						like sharing content related to the stuff that I have learned over the years in Web Development
-						so it can help other people of the Dev Community. Feel free to Connect or Follow me on my
-						Linkedin where I post useful content related to Web Development and Programming I'm open to Job
-						opportunities where I can contribute, learn and grow. If you have a good opportunity that
-						matches my skills and experience then don't hesitate to contact me.
-					</p>
-				</div>
-				<div className="md:w-1/2 w-full">
-					<h5 className="text-xl font-bold text-gray-800 dark:text-white mb-4">
-						Here are a few technologies I’ve been working with recently
-					</h5>
-					<div className="flex flex-wrap justify-center">
-						<div className="p-2 w-1/2">
-							<div className="flex items-center">
-								<div className="w-10 h-10 bg-gray-200 rounded-full flex-shrink-0">
-									<FaCode className="text-gray-800 dark:text-white p-2" />
-								</div>
-								<div className="ml-4">
-									<h2 className="text-gray-900 dark:text-white title-font font-medium text-lg">
-										HTML/CSS
-									</h2>
-								</div>
-							</div>
-						</div>
-						<div className="p-2 w-1/2">
-							<div className="flex items-center">
-								<div className="w-10 h-10 bg-gray-200 rounded-full flex-shrink-0">
-									<FaCode className="text-gray-800 dark:text-white p-2" />
-								</div>
-								<div className="ml-4">
-									<h2 className="text-gray-900 dark:text-white title-font font-medium text-lg">
-										JavaScript
-									</h2>
-								</div>
-							</div>
-						</div>
-						<div className="p-2 w-1/2">
-							<div className="flex items-center">
-								<div className="w-10 h-10 bg-gray-200 rounded-full flex-shrink-0">
-									<FaCode className="text-gray-800 dark:text-white p-2" />
-								</div>
-								<div className="ml-4">
-									<h2 className="text-gray-900 dark:text-white title-font font-medium text-lg">
-										React
-									</h2>
-								</div>
-							</div>
-						</div>
-						<div className="p-2 w-1/2">
-							<div className="flex items-center">
-								<div className="w-10 h-10 bg-gray-200 rounded-full flex-shrink-0">
-									<FaCode className="text-gray-800 dark:text-white p-2" />
-								</div>
-								<div className="ml-4">
-									<h2 className="text-gray-900 dark:text-white title-font font-medium text-lg">
-										Node.js
-									</h2>
-								</div>
-							</div>
-						</div>
-						<div className="p-2 w-1/2">
-							<div className="flex items-center">
-								<div className="w-10 h-10 bg-gray-200 rounded-full flex-shrink-0">
-									<FaCode className="text-gray-800 dark:text-white p-2" />
-								</div>
-								<div className="ml-4">
-									<h2 className="text-gray-900 dark:text-white title-font font-medium text-lg">
-										Python
-									</h2>
-								</div>
-							</div>
-						</div>
-						<div className="p-2 w-1/2">
-							<div className="flex items-center">
-								<div className="w-10 h-10 bg-gray-200 rounded-full flex-shrink-0">
-									<FaCode className="text-gray-800 dark:text-white p-2" />
-								</div>
-								<div className="ml-4">
-									<h2 className="text-gray-900 dark:text-white title-font font-medium text-lg">
-										Java
-									</h2>
-								</div>
-							</div>
-						</div>
-						<div className="p-2 w-1/2">
-							<div className="flex items-center">
-								<div className="w-10 h-10 bg-gray-200 rounded-full flex-shrink-0">
-									<FaCode className="text-gray-800 dark:text-white p-2" />
-								</div>
-								<div className="ml-4">
-									<h2 className="text-gray-900 dark:text-white title-font font-medium text-lg">
-										SQL
-									</h2>
-								</div>
-							</div>
+		<section id="about" className="p-16">
+			<div className="container mx-auto flex flex-col  px-4">
+				<h1 className="mb-10 text-left text-3xl font-bold sm:text-4xl">About Me</h1>
+				<div className="flex w-full flex-col md:flex-row md:justify-between">
+					<div className="mb-10 md:mb-0 md:w-1/2 md:pr-16">
+						<p className="text-center text-base leading-relaxed  dark:text-gray-400 md:text-left ">
+							Hi! My name is Lucas and I'm a web developer based in Argentina. With a passion for web
+							development, I specialize in JavaScript, React, and Express to create awesome web
+							applications.
+							<br />
+							<br />
+							Having experience in both front-end and back-end development, I find working on the logic
+							side of things to be particularly rewarding. I always welcome to new challenges and strive
+							to continuously learn and grow in my career.
+							<br />
+							<br />
+							Throughout my experience, I've honed my skills to become proficient in developing web
+							applications that are both functional and visually appealing.
+							<br />
+							<br />
+							Thank you for taking the time to review my portfolio. I look forward to discussing any
+							opportunities that may be a good fit.
+						</p>
+					</div>
+					<div className="md:w-1/2">
+						<h5 className="mb-6 text-center font-bold md:text-left md:text-2xl">Skills & Technologies</h5>
+						<div className="flex space-x-4 ">
+							{skillsData.map((item) => {
+								return (
+									<div className="w-1/3">
+										<div className="mb-3 flex items-center rounded-lg bg-gray-200 px-4 py-2 dark:bg-gray-700">
+											<h2 className="text-base font-medium text-gray-900 dark:text-white">
+												{item.type}
+											</h2>
+										</div>
+										<ul className="ml-4 mt-2 text-gray-700 dark:text-gray-300">
+											{item.skills.map((skill) => {
+												return (
+													<li
+														className=" mb-2 flex flex-row items-center justify-start"
+														id="icon"
+													>
+														{skill.icon}
+														<label htmlFor="icon" className="ml-2">
+															{skill.name}
+														</label>
+													</li>
+												)
+											})}
+										</ul>
+									</div>
+								)
+							})}
 						</div>
 					</div>
 				</div>

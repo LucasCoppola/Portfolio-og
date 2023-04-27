@@ -3,9 +3,9 @@ import React from 'react'
 const Landing = () => {
 	return (
 		<section id="landing">
-			<div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
-				<div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center w-80 mx-8">
-					<h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+			<div className="container mx-auto flex flex-col items-center px-10 py-20 md:flex-row ">
+				<div className="mx-8 mb-16 flex w-80 flex-col items-center text-center md:mb-0 md:w-1/2 md:items-start md:pr-16 md:text-left lg:flex-grow lg:pr-24">
+					<h1 className="title-font mb-4 text-3xl font-medium text-white sm:text-4xl">
 						Hi, I'm Lucas.
 						<br className="hidden lg:inline-block" />I Build Amazing Websites and Web Apps
 					</h1>
@@ -24,7 +24,7 @@ const Landing = () => {
 
 					<a
 						href="#contact"
-						class="text-white bg-gradient-to-r bg-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-base dark:shadow-green-800/80  rounded-lg font-medium text-lg px-6 py-3 text-center mr-2 mb-2 transition duration-200 ease-in-out transform hover:-translate-y-0.5"
+						class="dark:shadow-base mb-2 mr-2 transform rounded-lg bg-green-600 bg-gradient-to-r px-6 py-3 text-center text-lg font-medium  text-white shadow-lg shadow-green-500/50 transition duration-200 ease-in-out hover:-translate-y-0.5 hover:bg-gradient-to-br focus:outline-none focus:ring-4 focus:ring-green-300 dark:shadow-green-800/80 dark:focus:ring-green-800"
 					>
 						Let's Work Together
 					</a>
