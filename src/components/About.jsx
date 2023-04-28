@@ -29,7 +29,7 @@ const About = () => {
 							opportunities that may be a good fit.
 						</p>
 					</div>
-					<div className="md:w-1/2">
+					<div className="mt-8 md:w-1/2">
 						<h5 className="mb-6 text-center font-bold md:text-2xl">Skills & Technologies</h5>
 						<div className="flex justify-around space-x-4	">
 							{skillsData.map((item) => {
