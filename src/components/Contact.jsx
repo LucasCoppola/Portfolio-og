@@ -1,17 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useForm } from 'react-hook-form'
 
 const Contact = () => {
+	const {
+		register,
+		trigger,
+		formState: { errors }
+	} = useForm()
+	const onSubmit = async (e) => {
+		const isValid = await trigger()
+		if (!isValid) {
+			e.preventDefault()
+		}
+	}
+
 	return (
-		<section className="px-4 pb-24 pt-20">
+		<section id="contact" className="px-4 pb-24 pt-20">
 			<div className="container mx-auto">
 				<div className="mx-auto mb-10 max-w-md">
 					<h2 className="mb-6 text-center text-3xl font-bold">Contact</h2>
 					<p className="text-center text-gray-400">
-						Get in touch or shoot me an email directly on lucascoppola21@gmail.com
+						Get in touch or shoot me an email directly at{' '}
+						<a href="mailto:lukicoppola@gmail.com" className="text-green-300">
+							lukicoppola@gmail.com
+						</a>
 					</p>
 				</div>
 				<div className="mx-auto max-w-md">
-					<form action="#" method="POST">
+					<form
+						action="https://formsubmit.co/6dd7975fb11f839145a3587c0ee35723"
+						method="post"
+						onSubmit={onSubmit}
+					>
 						<div className="mb-4">
 							<label htmlFor="name" className="mb-2 block font-medium text-gray-400">
 								Name
@@ -20,9 +40,16 @@ const Contact = () => {
 								type="text"
 								id="name"
 								name="name"
-								className="form-input w-full rounded-md border-gray-300 bg-gray-800 px-4 py-2 text-gray-400"
-								required
+								placeholder="John Doe"
+								className="form-input w-full rounded-md bg-gray-800 px-4 py-2 text-gray-400"
+								{...register('name', { required: true, maxLength: 80 })}
 							/>
+							{errors.name && (
+								<p className="text-sm text-red-500">
+									{errors.name.type === 'required' && 'Name is required'}
+									{errors.name.type === 'maxLength' && 'Name must be less than 80 characters'}
+								</p>
+							)}
 						</div>
 						<div className="mb-4">
 							<label htmlFor="email" className="mb-2 block font-medium text-gray-400">
@@ -32,9 +59,16 @@ const Contact = () => {
 								type="email"
 								id="email"
 								name="email"
-								className="form-input w-full rounded-md  bg-gray-800 px-4 py-2 text-gray-400"
-								required
+								placeholder="johndoe@example.com"
+								className="form-input w-full rounded-md bg-gray-800 px-4 py-2 text-gray-400"
+								{...register('email', { required: true, min: 4, maxLength: 64, pattern: /^\S+@\S+$/i })}
 							/>
+							{errors.email && (
+								<p className="text-sm text-red-500">
+									{errors.email.type === 'required' && 'Email is required'}
+									{errors.email.type === 'pattern' && 'Invalid email address'}
+								</p>
+							)}
 						</div>
 						<div className="mb-4">
 							<label htmlFor="message" className="mb-2 block font-medium text-gray-400">
@@ -43,10 +77,17 @@ const Contact = () => {
 							<textarea
 								id="message"
 								name="message"
-								rows="5"
+								rows="4"
+								placeholder="Type your message here"
 								className="form-textarea w-full rounded-md border-gray-300 bg-gray-800 px-4 py-2 text-gray-400"
-								required
+								{...register('message', { required: true, maxLength: 320 })}
 							></textarea>
+							{errors.message && (
+								<p className="text-sm text-red-500">
+									{errors.message.type === 'required' && 'Message is required'}
+									{errors.message.type === 'maxLength' && 'Message must be less than 320 characters'}
+								</p>
+							)}
 						</div>
 						<div className="mb-4">
 							<button
