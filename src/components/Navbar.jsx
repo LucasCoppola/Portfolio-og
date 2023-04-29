@@ -1,13 +1,30 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import { IoCloseOutline } from 'react-icons/io5'
 
 const Navbar = () => {
 	const [menuOpen, setMenuOpen] = useState(false)
+	const [prevScrollpos, setPrevScrollpos] = useState(0)
+	const [visible, setVisible] = useState(true)
+
+	useEffect(() => {
+		const handleScroll = () => {
+			const currentScrollPos = window.pageYOffset
+			setVisible(prevScrollpos > currentScrollPos || currentScrollPos < 10)
+			setPrevScrollpos(currentScrollPos)
+		}
+		if (menuOpen && !visible) {
+			setMenuOpen(false)
+		}
+
+		window.addEventListener('scroll', handleScroll)
+
+		return () => window.removeEventListener('scroll', handleScroll)
+	}, [prevScrollpos])
 
 	return (
-		<header className="top-0 z-10 mb-6 bg-gray-800 md:sticky">
-			<div className="container mx-auto flex flex-col flex-wrap items-center p-2 md:flex-row md:justify-between lg:px-20">
+		<header className={`top-0 z-10 mb-6 bg-gray-800 ${visible ? 'sticky ' : ''} `}>
+			<div className="flexflex-col container mx-auto flex-wrap items-center p-2 md:flex-row md:justify-between lg:px-20">
 				<div className="flex w-full items-center justify-between ">
 					<div className="flex-shrink flex-grow">
 						<a href="#about">
@@ -44,7 +61,7 @@ const Navbar = () => {
 				<nav
 					className={`${
 						menuOpen ? ' ml-auto flex flex-col md:flex-row ' : 'hidden'
-					} absolute mt-16 w-full bg-gray-800 px-6 pb-4 pt-3 md:flex md:items-center md:justify-between`}
+					} absolute mt-16 w-full bg-gray-800 px-6 pb-4 md:flex md:items-center md:justify-between`}
 				>
 					<a href="#about" className="md: mt-4 block text-right  text-lg hover:text-white md:mt-0">
 						About
