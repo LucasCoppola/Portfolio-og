@@ -7,7 +7,7 @@ import Projects from './components/Projects'
 
 const App = () => {
 	return (
-		<main className="text-gray-400 bg-gray-900 body-font">
+		<main className="body-font scroll-smooth bg-gray-900 text-gray-400">
 			<Navbar />
 			<Landing />
 			<About />
