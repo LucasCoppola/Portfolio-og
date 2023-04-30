@@ -37,10 +37,10 @@ const Navbar = () => {
 						</Link>
 					</div>
 
-					<div className="ml-auto hidden md:flex">
+					<div className="ml-auto hidden items-center md:flex">
 						<Link
 							to="about"
-							className="ml-6 mt-4 block cursor-pointer text-lg hover:text-white md:mt-0"
+							className="ml-6 mt-4 block cursor-pointer text-lg transition duration-200 ease-in-out hover:border-b-2 hover:border-green-300 hover:bg-gray-800 hover:text-white md:mt-0"
 							spy={true}
 							smooth={true}
 							offset={50}
@@ -50,7 +50,7 @@ const Navbar = () => {
 						</Link>
 						<Link
 							to="projects"
-							className="ml-6 mt-4 block cursor-pointer text-lg hover:text-white md:mt-0"
+							className="ml-6 mt-4 block cursor-pointer text-lg transition duration-200 ease-in-out hover:border-b-2 hover:border-green-300 hover:bg-gray-800 hover:text-white md:mt-0"
 							spy={true}
 							smooth={true}
 							offset={50}
@@ -60,7 +60,7 @@ const Navbar = () => {
 						</Link>
 						<Link
 							to="contact"
-							className="ml-6 mt-4 block cursor-pointer text-lg hover:text-white md:mt-0"
+							className="ml-6 mt-4 block cursor-pointer text-lg transition duration-200 ease-in-out hover:border-b-2 hover:border-green-300 hover:bg-gray-800 hover:text-white md:mt-0"
 							spy={true}
 							smooth={true}
 							offset={50}
@@ -68,7 +68,11 @@ const Navbar = () => {
 						>
 							Contact
 						</Link>
+						<button className="ml-6 mt-4 block rounded border border-green-300 bg-transparent px-4 py-2 font-semibold text-green-300 transition duration-200 ease-in-out hover:-translate-y-0.5 hover:border-b-4 md:mt-0">
+							Resume
+						</button>
 					</div>
+
 					<div className="flex-shrink flex-grow-0">
 						<button
 							className="ml-auto inline-block rounded px-4 py-2 text-gray-200 hover:text-white focus:outline-none md:hidden"
@@ -115,6 +119,11 @@ const Navbar = () => {
 					>
 						Contact
 					</Link>
+					<button className="ml-auto mt-4 block w-24 rounded border border-green-300 bg-transparent px-4 py-2 text-right font-semibold text-green-300 md:mt-0">
+						<a href="path/to/your/resume.pdf" target="_blank">
+							Resume
+						</a>
+					</button>
 				</nav>
 			</div>
 		</header>
