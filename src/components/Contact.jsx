@@ -15,15 +15,13 @@ const Contact = () => {
 	}
 
 	return (
-		<section id="contact" className="px-4 pb-24 pt-20">
+		<section id="contact" className="px-4 pb-12 pt-20">
 			<div className="container mx-auto">
 				<div className="mx-auto mb-10 max-w-md">
 					<h2 className="mb-6 text-center text-3xl font-bold">Contact</h2>
 					<p className="text-center text-gray-400">
 						Get in touch or shoot me an email directly at{' '}
-						<a href="mailto:lukicoppola@gmail.com" className="text-green-300">
-							lukicoppola@gmail.com
-						</a>
+						<span className="text-green-300">lukicoppola@gmail.com</span>
 					</p>
 				</div>
 				<div className="mx-auto max-w-md">
