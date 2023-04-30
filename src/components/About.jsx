@@ -11,18 +11,18 @@ const About = () => {
 				<div className="flex w-full flex-col md:flex-row md:justify-between">
 					<div className="mb-10 md:mb-0 md:w-1/2 md:pr-16">
 						<p className="text-center text-base leading-relaxed  dark:text-gray-400 md:text-left">
-							Hi! My name is Lucas and I'm a web developer based in Argentina. With a passion for web
-							development, I specialize in JavaScript, React, and Express to create awesome web
-							applications.
+							Hi! My name is Lucas and I'm a web developer with a passion for web development. I have
+							experience working with a variety of technologies, including JavaScript, React, Express, and
+							more to create awesome web applications.
 							<br />
 							<br />
-							Having experience in both front-end and back-end development, I find working on the logic
-							side of things to be particularly rewarding. I always welcome to new challenges and strive
-							to continuously learn and grow in my career.
+							With experience in both front-end and back-end development, I find working on the logical
+							side of things to be particularly rewarding. I'm open to new challenges and aim to
+							continuously learn and grow in my career.
 							<br />
 							<br />
-							Throughout my experience, I've honed my skills to become proficient in developing web
-							applications that are both functional and visually appealing.
+							During my experience, I have honed my skills in creating functional and visually appealing
+							web applications.
 							<br />
 							<br />
 							Thank you for taking the time to review my portfolio. I look forward to discussing any
