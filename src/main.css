@@ -27,3 +27,16 @@ textarea::-webkit-input-placeholder,
 select::-webkit-input-placeholder {
 	color: #55555b !important;
 }
+
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+::-webkit-scrollbar-track {
+	background: #111827;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #495670;
+	border: 3px solid #111827;
+	border-radius: 10px;
+}
