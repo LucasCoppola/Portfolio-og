@@ -4,6 +4,7 @@ import Landing from './components/Landing'
 import Contact from './components/Contact'
 import Navbar from './components/Navbar'
 import Projects from './components/Projects'
+import Footer from './components/Footer'
 
 const App = () => {
 	return (
@@ -13,6 +14,7 @@ const App = () => {
 			<About />
 			<Projects />
 			<Contact />
+			<Footer />
 		</main>
 	)
 }
