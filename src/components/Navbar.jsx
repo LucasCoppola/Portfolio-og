@@ -40,7 +40,7 @@ const Navbar = () => {
 					<div className="ml-auto hidden md:flex">
 						<Link
 							to="about"
-							className="ml-6 mt-4 block text-lg hover:text-white md:mt-0"
+							className="ml-6 mt-4 block cursor-pointer text-lg hover:text-white md:mt-0"
 							spy={true}
 							smooth={true}
 							offset={50}
@@ -50,7 +50,7 @@ const Navbar = () => {
 						</Link>
 						<Link
 							to="projects"
-							className="ml-6 mt-4 block text-lg hover:text-white md:mt-0"
+							className="ml-6 mt-4 block cursor-pointer text-lg hover:text-white md:mt-0"
 							spy={true}
 							smooth={true}
 							offset={50}
@@ -60,7 +60,7 @@ const Navbar = () => {
 						</Link>
 						<Link
 							to="contact"
-							className="ml-6 mt-4 block text-lg hover:text-white md:mt-0"
+							className="ml-6 mt-4 block cursor-pointer text-lg hover:text-white md:mt-0"
 							spy={true}
 							smooth={true}
 							offset={50}
