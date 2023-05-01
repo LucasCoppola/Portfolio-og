@@ -1,37 +1,52 @@
 import React from 'react'
 import { HiCode } from 'react-icons/hi'
+import { FaGithub } from 'react-icons/fa'
+import { FiExternalLink } from 'react-icons/fi'
 import { projects } from '../data'
 
 const Projects = () => {
 	return (
-		<section id="projects">
-			<div className="container px-5 py-10 mx-auto text-center lg:px-40">
-				<div className="flex flex-col w-full mb-20">
-					<HiCode className="mx-auto inline-block w-24 mb-4 !h-10" />
-					<h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">Apps I've Built</h1>
-					<p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo facilis repellat ab
-						cupiditate alias vero aliquid obcaecati quisquam fuga dolore.
-					</p>
+		<section id="projects" className="body-font overflow-hidden text-gray-400">
+			<div className="container mx-auto px-5 py-24">
+				<div className="mb-20 flex w-full flex-wrap">
+					<div className="mb-6 w-full lg:mb-0">
+						<h1 className="mb-10 text-center text-3xl font-bold sm:text-4xl">Projects</h1>
+					</div>
 				</div>
-				<div className="flex flex-wrap -m-4">
+				<div className="flex flex-col items-center">
 					{projects.map((project) => (
-						<a href={project.link} key={project.image} className="sm:w-1/2 w-100 p-4">
-							<div className="flex relative">
-								<img
-									alt="gallery"
-									className="absolute inset-0 w-full h-full object-cover object-center"
-									src={project.image}
-								/>
-								<div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
-									<h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
-										{project.subtitle}
-									</h2>
-									<h1 className="title-font text-lg font-medium text-white mb-3">{project.title}</h1>
-									<p className="leading-relaxed">{project.description}</p>
+						<div className="mb-8 flex w-2/3 justify-center overflow-hidden rounded-lg bg-gray-700 shadow-lg">
+							<img src={project.image} alt={project.title} className="h-auto w-1/2 object-cover" />
+							<div className="w-1/2  bg-gray-800 p-6">
+								<h2 className="mb-4 text-3xl font-bold text-white">{project.title}</h2>
+								<p className="mb-6 text-base text-gray-400">{project.description}</p>
+								<div className="mb-6 flex flex-wrap">
+									{project.technologies.map((tech) => (
+										<p className="mb-2 mr-2 inline-block rounded-full border border-gray-600 bg-gray-700 px-3 py-1 text-sm text-white">
+											{tech}
+										</p>
+									))}
+								</div>
+								<div className="flex items-center justify-between">
+									<a
+										href="https://github.com/example"
+										target="_blank"
+										rel="noopener noreferrer"
+										className="mr-4 font-bold text-white hover:text-green-300"
+									>
+										<FaGithub className="text-3xl" />
+									</a>
+									<a
+										href="https://example.com"
+										target="_blank"
+										rel="noopener noreferrer"
+										className="rounded px-4 py-2 font-bold text-white hover:text-green-300"
+									>
+										<FiExternalLink className="text-3xl" />
+									</a>
 								</div>
 							</div>
-						</a>
+						</div>
 					))}
 				</div>
 			</div>
