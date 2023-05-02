@@ -4,7 +4,7 @@ import { Link } from 'react-scroll'
 const Landing = () => {
 	return (
 		<section id="landing">
-			<div className="container mx-auto flex flex-col items-center  justify-center px-10 py-20 md:flex-row">
+			<div className="container mx-auto flex flex-col items-center  justify-center px-10 pb-20 pt-40 md:flex-row">
 				<div className="mx-8 mb-16 flex w-80 flex-col items-center text-center md:mb-0 md:w-1/2 md:flex-grow md:items-start md:pr-16 md:text-left lg:pr-24">
 					<h1 className="title-font mb-4 text-3xl font-medium text-white sm:text-4xl">
 						Hi, I'm Lucas.
