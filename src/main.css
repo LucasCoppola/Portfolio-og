@@ -40,3 +40,17 @@ select::-webkit-input-placeholder {
 	border: 3px solid #111827;
 	border-radius: 10px;
 }
+
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	transform: translateY(0);
+	transition: transform 0.3s ease-in-out;
+}
+
+.navbar--hidden {
+	transform: translateY(-100%);
+}
