@@ -3,7 +3,7 @@ import { skillsData } from '../data'
 
 const About = () => {
 	return (
-		<section id="about" className="md:px-10 lg:p-16">
+		<section id="about" className="md:px-10 lg:px-20 lg:py-16">
 			<div className="container mx-auto flex flex-col  px-4">
 				<h1 className="mb-10 text-center text-3xl font-bold sm:text-4xl md:text-center lg:text-left">
 					About Me

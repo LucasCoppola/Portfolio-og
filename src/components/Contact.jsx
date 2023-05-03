@@ -21,7 +21,7 @@ const Contact = () => {
 					<h2 className="mb-6 text-center text-3xl font-bold">Contact</h2>
 					<p className="text-center text-gray-400">
 						Get in touch or shoot me an email directly at{' '}
-						<span className="text-green-300">lukicoppola@gmail.com</span>
+						<span className="text-green-300">lucascoppola21@gmail.com</span>
 					</p>
 				</div>
 				<div className="mx-auto max-w-md">
