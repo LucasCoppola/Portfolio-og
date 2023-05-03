@@ -1,20 +1,24 @@
 export const projects = [
 	{
-		title: 'React Reserve',
-		technologies: ['React', 'Express', 'Node.js', 'MongoDB'],
+		title: 'Storage App',
+		technologies: ['Ejs', 'Bootstrap', 'Express', 'Node.js', 'Mongoose', 'MongoDB'],
 		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?',
-		image: './project-1.gif',
-		link: 'https://reactbootcamp.com'
-	},
-	{
-		title: 'DevChat',
-		technologies: ['React', 'Express', 'Node.js', 'MongoDB'],
-		description:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?',
-		image: './project-3.gif',
-		link: 'https://reactbootcamp.com'
+			'Designed and developed a CRUD web application for companies to store and manage their products. The application provides user registration and login, allowing users to create, edit, and delete products and associated images. The application provides a clean and intuitive user interface, making it easy for users to manage their product inventory.',
+		image: './storage-app.png',
+		link: 'https://storage-app-nmpn.onrender.com',
+		repo: 'https://github.com/LucasCoppola/Storage-App',
+		page: ''
 	}
+	// {
+	// 	title: 'DevChat',
+	// 	technologies: ['React', 'Express', 'Node.js', 'MongoDB'],
+	// 	description:
+	// 		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?',
+	// 	image: './project-3.gif',
+	// 	link: 'https://reactbootcamp.com',
+	// 	repo: '',
+	// 	page: ''
+	// }
 ]
 
 export const skillsData = [
