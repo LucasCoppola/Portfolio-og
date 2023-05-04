@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-scroll'
+import { Link as RouterLink } from 'react-router-dom'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import { IoCloseOutline } from 'react-icons/io5'
 
@@ -46,11 +47,13 @@ const Navbar = () => {
 							offset={50}
 							duration={500}
 						>
-							<img
-								src="../../LC.png"
-								alt="logo"
-								className="border-white-500 my-1 h-12 w-12 rounded-full border-2 "
-							/>
+							<RouterLink to="/">
+								<img
+									src="../../LC.png"
+									alt="logo"
+									className="border-white-500 my-1 h-12 w-12 rounded-full border-2 "
+								/>
+							</RouterLink>
 						</Link>
 					</div>
 
@@ -63,7 +66,7 @@ const Navbar = () => {
 							offset={50}
 							duration={500}
 						>
-							About
+							<RouterLink to="/">About</RouterLink>
 						</Link>
 						<Link
 							to="projects"
@@ -73,7 +76,7 @@ const Navbar = () => {
 							offset={50}
 							duration={500}
 						>
-							Projects
+							<RouterLink to="/">Projects</RouterLink>
 						</Link>
 						<Link
 							to="contact"
@@ -83,7 +86,7 @@ const Navbar = () => {
 							offset={50}
 							duration={500}
 						>
-							Contact
+							<RouterLink to="/">Contact</RouterLink>
 						</Link>
 						<button className="ml-6 mt-4 block rounded border border-green-300 bg-transparent px-4 py-2 font-semibold text-green-300 transition duration-200 ease-in-out hover:-translate-y-0.5 hover:border-b-4 md:mt-0">
 							Resume
@@ -114,7 +117,7 @@ const Navbar = () => {
 						offset={50}
 						duration={500}
 					>
-						About
+						<RouterLink to="/">About</RouterLink>
 					</Link>
 					<Link
 						to="projects"
@@ -124,7 +127,7 @@ const Navbar = () => {
 						offset={50}
 						duration={500}
 					>
-						Projects
+						<RouterLink to="/">Projects</RouterLink>
 					</Link>
 					<Link
 						to="contact"
@@ -134,7 +137,7 @@ const Navbar = () => {
 						offset={50}
 						duration={500}
 					>
-						Contact
+						<RouterLink to="/">Contact</RouterLink>
 					</Link>
 					<button className="ml-auto mt-4 block w-24 rounded border border-green-300 bg-transparent px-4 py-2 text-right font-semibold text-green-300 md:mt-0">
 						<a href="path/to/your/resume.pdf" target="_blank">
