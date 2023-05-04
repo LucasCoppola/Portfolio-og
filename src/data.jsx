@@ -3,12 +3,13 @@ export const projects = [
 		title: 'Storage App',
 		technologies: ['Ejs', 'Bootstrap', 'Express', 'Node.js', 'Mongoose', 'MongoDB'],
 		description:
-			'Designed and developed a CRUD web application for companies to store and manage their products. The application provides user registration and login, allowing users to create, edit, and delete products and associated images. The application provides a clean and intuitive user interface, making it easy for users to manage their product inventory.',
-		image: './storage-app.png',
+			'Created a web application that enables companies to store and manage their product inventory through user registration and login. The application provides a user-friendly interface, allowing users to create, edit, and delete products along with associated images.',
+		images: ['./storage-app.png', './storage-app2.png'],
 		link: 'https://storage-app-nmpn.onrender.com',
 		repo: 'https://github.com/LucasCoppola/Storage-App',
-		page: ''
+		page: '/storage-app'
 	}
+
 	// {
 	// 	title: 'DevChat',
 	// 	technologies: ['React', 'Express', 'Node.js', 'MongoDB'],
