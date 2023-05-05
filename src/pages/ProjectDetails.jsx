@@ -5,9 +5,14 @@ import { FaGithub, FiExternalLink } from 'react-icons/all'
 const ProjectDetail = () => {
 	const project = projects[0]
 	return (
-		<div className="flex flex-col items-center justify-center px-20 pb-20 pt-36 lg:flex-row">
-			<div className="mb-10 lg:mb-0 lg:w-1/2 lg:pr-10">
-				<h2 className="mb-10 text-4xl font-bold">{project.title}</h2>
+		<div className="flex flex-col items-center justify-center px-4 pb-4 pt-36  lg:flex-row lg:px-20 lg:pb-20">
+			<div className="lg:w-1/2 lg:pr-10">
+				<h2 className="mb-6 text-2xl font-bold lg:text-4xl">{project.title}</h2>
+				<img
+					src={project.images[0]}
+					alt={project.title}
+					className="mb-6 h-64 rounded-lg object-cover lg:hidden"
+				/>
 				<div className="mb-4 text-sm">
 					<p>
 						Designed and developed a CRUD web application for companies to store and manage their products.
@@ -20,21 +25,23 @@ const ProjectDetail = () => {
 						share product information with team members.
 						<br />
 						<br />
-						Please keep in mind that this application is hosted for free, w hich may result in slower
-						loading times. If you'd like to try it out, I have set up a demo account that you can use to
-						test it out. Here are the login details:
-						<br />
-						<br />
-						Username: <b>demo</b>, Password: <b>demo</b>
-						<br />
-						<br />
-						Please note that this demo account is for testing purposes only. It is not intended for
-						long-term use or for storing any personal or sensitive information. If you have any feedback or
-						suggestions for the project, I would love to hear them.
+						<div className="hidden md:block">
+							Please keep in mind that this application is hosted for free, which may result in slower
+							loading times. If you'd like to try it out, I have set up a demo account that you can use to
+							test it out. Here are the login details:
+							<br />
+							<br />
+							Username: <b>demo</b>, Password: <b>demo</b>
+							<br />
+							<br />
+							Please note that this demo account is for testing purposes only. It is not intended for
+							long-term use or for storing any personal or sensitive information. If you have any feedback
+							or suggestions for the project, I would love to hear them.
+						</div>
 					</p>
 				</div>
-				<div className="mt-10">
-					<h3 className="mb-4 text-xl font-bold">Technologies</h3>
+				<div className="mt-4">
+					<h3 className="mb-2 text-lg font-bold">Technologies</h3>
 					<div className="flex flex-wrap">
 						{project.technologies.map((tech) => (
 							<p
@@ -46,14 +53,14 @@ const ProjectDetail = () => {
 						))}
 					</div>
 				</div>
-				<div className="mt-8 flex items-center">
+				<div className="mt-4 flex items-center">
 					<a
 						href={project.repo}
 						target="_blank"
 						rel="noopener noreferrer"
 						className="mr-4 font-bold text-white hover:text-green-300"
 					>
-						<FaGithub className="transform text-3xl transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110" />
+						<FaGithub className="transform text-xl transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 lg:text-3xl" />
 					</a>
 					<a
 						href={project.link}
@@ -61,14 +68,14 @@ const ProjectDetail = () => {
 						rel="noopener noreferrer"
 						className="transform rounded px-4 py-2 font-bold text-white transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-green-300"
 					>
-						<FiExternalLink className="text-3xl" />
+						<FiExternalLink className="text-xl lg:text-3xl" />
 					</a>
 				</div>
 			</div>
-			<div className=" lg:w-1/2">
+			<div className="hidden lg:block lg:w-1/2">
 				<div className="ml-10 max-w-md">
-					<img src={project.images[0]} alt={project.title} className="mb-4 h-64 object-cover" />
-					<img src={project.images[1]} alt={project.title} className="my-4 h-64 object-cover" />
+					<img src={project.images[0]} alt={project.title} className="mb-4 h-64 rounded-lg object-cover" />
+					<img src={project.images[1]} alt={project.title} className="my-4 h-64 rounded-lg object-cover" />
 				</div>
 			</div>
 		</div>
