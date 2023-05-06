@@ -60,7 +60,7 @@ const ProjectDetail = () => {
 						rel="noopener noreferrer"
 						className="mr-4 font-bold text-white hover:text-green-300"
 					>
-						<FaGithub className="transform text-xl transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 lg:text-3xl" />
+						<FaGithub className="transform  text-3xl transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110" />
 					</a>
 					<a
 						href={project.link}
@@ -68,7 +68,7 @@ const ProjectDetail = () => {
 						rel="noopener noreferrer"
 						className="transform rounded px-4 py-2 font-bold text-white transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-green-300"
 					>
-						<FiExternalLink className="text-xl lg:text-3xl" />
+						<FiExternalLink className="text-3xl" />
 					</a>
 				</div>
 			</div>
