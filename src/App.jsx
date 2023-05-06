@@ -7,6 +7,7 @@ import Navbar from './components/Navbar'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
 import ProjectDetails from './pages/ProjectDetails'
+import Timeline from './pages/Timeline'
 
 const App = () => {
 	return (
@@ -26,6 +27,7 @@ const App = () => {
 						}
 					/>
 					<Route path="/storage-app" element={<ProjectDetails />} />
+					<Route path="/timeline" element={<Timeline />} />
 				</Routes>
 				<Footer />
 			</main>
