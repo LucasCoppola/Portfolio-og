@@ -4,8 +4,8 @@ import { SiJavascript, SiCss3, SiHtml5 } from 'react-icons/si'
 
 const Section1 = () => {
 	return (
-		<div className="container mx-auto">
-			<h2 className="mb-16 text-center text-3xl font-bold">My Web Development Journey</h2>
+		<>
+			<h3 className="mb-8 text-center text-2xl font-bold ">The Basics</h3>
 			<div className="flex flex-wrap justify-center lg:flex-row">
 				<div className="m-4 flex flex-col items-center">
 					<div className="mb-4 rounded-full bg-gray-700 p-4">
@@ -91,7 +91,7 @@ const Section1 = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</>
 	)
 }
 
