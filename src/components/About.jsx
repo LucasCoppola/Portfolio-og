@@ -9,8 +9,8 @@ const About = () => {
 					About Me
 				</h1>
 				<div className="flex w-full flex-col md:flex-row md:justify-between">
-					<div className="mb-10 md:mb-0 md:w-1/2 md:pr-16">
-						<p className="text-center text-base leading-relaxed  dark:text-gray-400 md:text-left">
+					<div className="mb-10 text-center md:w-1/2  md:pr-16 md:text-left">
+						<p className="mb-8 text-center text-base leading-relaxed  dark:text-gray-400 md:text-left">
 							Hi! My name is Lucas and I'm a web developer with a passion for web development. I have
 							experience working with a variety of technologies, including JavaScript, React, Express, and
 							more to create awesome web applications.
@@ -21,17 +21,20 @@ const About = () => {
 							continuously learn and grow in my career.
 							<br />
 							<br />
-							During my experience, I have honed my skills in creating functional and visually appealing
-							web applications.
-							<br />
-							<br />
 							Thank you for taking the time to review my portfolio. I look forward to discussing any
 							opportunities that may be a good fit.
 						</p>
+						<a
+							href="/timeline"
+							rel="noopener noreferrer"
+							className="dark:shadow-base mb-2 mr-2 transform cursor-pointer rounded-lg bg-green-600 bg-gradient-to-r px-6 py-3 text-center text-lg font-medium  text-white shadow-lg shadow-green-500/50 transition duration-200 ease-in-out hover:-translate-y-0.5 hover:bg-gradient-to-br focus:outline-none focus:ring-4 focus:ring-green-300 dark:shadow-green-800/80 dark:focus:ring-green-800 "
+						>
+							More About Me
+						</a>
 					</div>
 					<div className="mt-8 md:w-1/2">
 						<h5 className="mb-6 text-center font-bold md:text-2xl">Skills & Technologies</h5>
-						<div className="flex justify-around space-x-4	">
+						<div className="mb-8 flex justify-around space-x-4">
 							{skillsData.map((item) => {
 								return (
 									<div className="w-1/3">
