@@ -50,7 +50,7 @@ const Projects = () => {
 									<a
 										href={project.page}
 										rel="noopener noreferrer"
-										className="ml-auto transform rounded  bg-green-600 px-4 py-2 font-bold text-white transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110"
+										className="dark:shadow-base ml-auto transform rounded-lg bg-green-600 bg-gradient-to-r px-4 py-2 text-lg font-medium text-white shadow-lg shadow-green-500/50 transition duration-200 ease-in-out hover:-translate-y-0.5 hover:bg-gradient-to-br focus:outline-none focus:ring-4 focus:ring-green-300 dark:shadow-green-800/80 dark:focus:ring-green-800"
 									>
 										Learn more
 									</a>
