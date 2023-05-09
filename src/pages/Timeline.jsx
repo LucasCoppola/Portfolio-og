@@ -3,8 +3,8 @@ import { FaRegCircle } from 'react-icons/fa'
 
 const Timeline = () => {
 	return (
-		<section className="py-16 pt-40">
-			<div className="container mx-auto">
+		<section className="pb-16 pt-40">
+			<div className="container mx-auto px-4 sm:px-8 md:px-12 lg:px-16">
 				<h2 className="mb-16 text-center text-3xl font-bold">My Web Development Journey</h2>
 				<div className="mx-auto max-w-4xl">
 					<ul className="relative">
@@ -15,14 +15,16 @@ const Timeline = () => {
 									<FaRegCircle />
 								</div>
 								<div className="ml-4 flex-1 font-medium">
-									<div className="flex items-start justify-between">
-										<h3 className="text-xl font-bold">HTML, CSS and Javascript</h3>
-										<div className="text-right font-bold text-gray-500">2022</div>
+									<div className="flex items-center justify-between">
+										<h3 className="text-lg font-bold md:text-xl">HTML, CSS and Javascript</h3>
+										<div className="text-right text-xs font-bold text-gray-500 md:text-base">
+											2022
+										</div>
 									</div>
 								</div>
 							</div>
 							<div className="ml-14">
-								<div className="font-medium">
+								<div className="text-xs font-medium md:text-base">
 									I learned HTML, CSS, and JavaScript through project-based learning. I worked on
 									several projects to build my skills and gain experience with web development. In
 									addition, I took a course on{' '}
@@ -57,8 +59,8 @@ const Timeline = () => {
 									<FaRegCircle />
 								</div>
 								<div className="ml-4 flex-1 font-medium">
-									<div className="flex items-start justify-between">
-										<h3 className="text-xl font-bold">
+									<div className="flex items-center justify-between">
+										<h3 className="text-lg font-bold md:text-xl">
 											<a
 												href="https://www.udemy.com/course/the-web-developer-bootcamp/"
 												target="_blank"
@@ -70,12 +72,14 @@ const Timeline = () => {
 												<small />
 											</small>
 										</h3>
-										<div className="text-right font-bold text-gray-500">2022 - 2023</div>
+										<div className="text-right text-xs font-bold text-gray-500 md:text-base">
+											2022 - 2023
+										</div>
 									</div>
 								</div>
 							</div>
 							<div className="ml-14">
-								<div className="font-medium">
+								<div className="text-xs font-medium md:text-base">
 									After learning the basics of web development, I felt the need for a structured
 									course to further my knowledge. I found{' '}
 									<a
@@ -87,8 +91,8 @@ const Timeline = () => {
 									</a>{' '}
 									on Udemy, which not only provided the structure I was looking for, but also helped
 									me understand how to build a full-stack application. This course covered a wide
-									range of topics, from HTML, CSS, and JavaScript to Node.js, MongoDB, and RESTful
-									APIs, and gave me practical experience with each of these technologies.
+									range of topics, from HTML, CSS, and JavaScript to Node.js, Express.js, MongoDB, and
+									RESTful APIs, and gave me practical experience with each of these technologies.
 									<br />
 									<br />
 									Overall, it was a great learning experience and helped me develop my skills as a web
@@ -104,14 +108,16 @@ const Timeline = () => {
 									<FaRegCircle />
 								</div>
 								<div className="ml-4 flex-1 font-medium">
-									<div className="flex items-start justify-between">
-										<h3 className="text-xl font-bold">React</h3>
-										<div className="text-right font-bold text-gray-500">2023</div>
+									<div className="flex items-center justify-between ">
+										<h3 className="text-lg font-bold md:text-xl">React</h3>
+										<div className="text-right text-xs font-bold text-gray-500 md:text-base">
+											2023
+										</div>
 									</div>
 								</div>
 							</div>
 							<div className="ml-14">
-								<div className="font-medium">
+								<div className="text-xs font-medium md:text-base">
 									I started learning React with a basic course on{' '}
 									<a
 										href="https://scrimba.com/learn/learnreact"
@@ -154,13 +160,15 @@ const Timeline = () => {
 								</div>
 								<div className="ml-4 flex-1 font-medium">
 									<div className="flex items-start justify-between">
-										<h3 className="text-xl font-bold">Data Structures and Algorithms</h3>
-										<div className="text-right font-bold text-gray-500">Currently</div>
+										<h3 className="text-lg font-bold md:text-xl">Data Structures and Algorithms</h3>
+										<div className="text-right text-xs font-bold text-gray-500 md:text-base">
+											Currently
+										</div>
 									</div>
 								</div>
 							</div>
 							<div className="ml-14">
-								<div className="font-medium">
+								<div className="text-xs font-medium md:text-base">
 									I have been taking{' '}
 									<a
 										href="https://frontendmasters.com/courses/algorithms/"
