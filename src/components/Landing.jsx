@@ -17,9 +17,16 @@ const Landing = () => {
 					</p>
 					<p className="mb-8 leading-relaxed">
 						Check out some of my work in the{' '}
-						<a href="#projects" className="text-green-300">
+						<Link
+							to="projects"
+							spy={true}
+							smooth={true}
+							offset={50}
+							duration={500}
+							className="cursor-pointer text-green-300"
+						>
 							Projects
-						</a>{' '}
+						</Link>{' '}
 						section.
 					</p>
 
