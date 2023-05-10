@@ -13,30 +13,27 @@ const Projects = () => {
 					</div>
 				</div>
 				<div className="flex flex-col items-center">
-					{projects.map((project) => (
-						<div className="mb-8 flex w-full flex-col justify-center overflow-hidden rounded-lg bg-gray-700 shadow-lg lg:w-2/3 lg:flex-row lg:flex-wrap">
-							<img
-								src={project.images[0]}
-								alt={project.title}
-								className="h-auto  object-cover  lg:w-1/2"
-							/>
+					{projects.map((project, i) => (
+						<div
+							key={i}
+							className="mb-8 flex w-full flex-col justify-center overflow-hidden rounded-lg bg-gray-700 shadow-lg lg:w-2/3 lg:flex-row lg:flex-wrap"
+						>
+							<img src={project.images[0]} alt={project.title} className="h-auto  object-cover  lg:w-1/2" />
 							<div className="bg-gray-800  p-6 lg:w-1/2">
 								<h2 className="mb-4 text-3xl font-bold text-white">{project.title}</h2>
 								<p className="mb-6 text-base text-gray-400">{project.description}</p>
 								<div className="mb-6 flex flex-wrap">
-									{project.technologies.map((tech) => (
-										<p className="mb-2 mr-2 inline-block rounded-full border border-gray-600 bg-gray-700 px-3 py-1 text-sm text-white">
+									{project.technologies.map((tech, i) => (
+										<p
+											key={i}
+											className="mb-2 mr-2 inline-block rounded-full border border-gray-600 bg-gray-700 px-3 py-1 text-sm text-white"
+										>
 											{tech}
 										</p>
 									))}
 								</div>
 								<div className="flex items-center justify-start">
-									<a
-										href={project.repo}
-										target="_blank"
-										rel="noopener noreferrer"
-										className="mr-4 font-bold text-white hover:text-green-300"
-									>
+									<a href={project.repo} target="_blank" rel="noopener noreferrer" className="mr-4 font-bold text-white hover:text-green-300">
 										<FaGithub className="transform text-3xl transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110" />
 									</a>
 									<a
