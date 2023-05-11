@@ -20,16 +20,11 @@ const Contact = () => {
 				<div className="mx-auto mb-10 max-w-md">
 					<h2 className="mb-6 text-center text-3xl font-bold">Contact</h2>
 					<p className="text-center text-gray-400">
-						Get in touch or shoot me an email directly at{' '}
-						<span className="text-green-300">lucascoppola21@gmail.com</span>
+						Get in touch or shoot me an email directly at <span className="text-green-300">lucascoppola21@gmail.com</span>
 					</p>
 				</div>
 				<div className="mx-auto max-w-md">
-					<form
-						action="https://formsubmit.co/6dd7975fb11f839145a3587c0ee35723"
-						method="post"
-						onSubmit={onSubmit}
-					>
+					<form action="https://formsubmit.co/6dd7975fb11f839145a3587c0ee35723" method="post" onSubmit={onSubmit}>
 						<div className="mb-4">
 							<label htmlFor="name" className="mb-2 block font-medium text-gray-400">
 								Name
