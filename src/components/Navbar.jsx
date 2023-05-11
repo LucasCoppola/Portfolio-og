@@ -78,7 +78,9 @@ const Navbar = () => {
 							<RouterLink to="/">Contact</RouterLink>
 						</Link>
 						<button className="ml-6 mt-4 block rounded border border-green-300 bg-transparent px-4 py-2 font-semibold text-green-300 transition duration-200 ease-in-out hover:-translate-y-0.5 hover:border-b-4 md:mt-0">
-							Resume
+							<a href="../../resume.pdf" target="_blank">
+								Resume
+							</a>
 						</button>
 					</div>
 
@@ -108,7 +110,7 @@ const Navbar = () => {
 						<RouterLink to="/">Contact</RouterLink>
 					</Link>
 					<button className="ml-auto mt-4 block w-24 rounded border border-green-300 bg-transparent px-4 py-2 text-right font-semibold text-green-300 md:mt-0">
-						<a href="path/to/your/resume.pdf" target="_blank">
+						<a href="../../resume.pdf" target="_blank">
 							Resume
 						</a>
 					</button>
