@@ -33,8 +33,8 @@ const About = () => {
 							{skillsData.map((item, i) => {
 								return (
 									<div key={i} className="w-1/3">
-										<div className="mb-3 flex items-center rounded-lg bg-gray-200 px-4 py-2 dark:bg-gray-700">
-											<h2 className="text-base font-medium text-gray-900 dark:text-white md:font-light">{item.type}</h2>
+										<div className="mb-3 flex items-center rounded-lg bg-gray-700 px-4 py-2">
+											<h2 className="text-base font-medium text-white md:font-light">{item.type}</h2>
 										</div>
 										<ul className="mt-2 text-gray-700 dark:text-gray-300 lg:ml-4 ">
 											{item.skills.map((skill, i) => {
