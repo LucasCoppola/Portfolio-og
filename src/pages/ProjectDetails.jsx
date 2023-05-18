@@ -37,19 +37,20 @@ const ProjectDetail = () => {
 					<h3 className="mb-2 text-lg font-bold">Technologies</h3>
 					<div className="flex flex-wrap">
 						{project.technologies.map((tech) => (
-							<p key={tech} className="mb-2 mr-2 inline-block rounded-full border border-gray-600 bg-gray-700 px-3 py-1 text-sm text-white">
+							<p key={tech} className="mb-2 mr-2 inline-block rounded-full pr-4 pt-1 text-2xl text-white">
 								{tech}
 							</p>
 						))}
 					</div>
 				</div>
 				<div className="mt-4 flex items-center">
-					<a href={project.repo} target="_blank" rel="noopener noreferrer" className="mr-4 font-bold text-white hover:text-green-300">
+					<a href={project.repo} target="_blank" title="Github" rel="noopener noreferrer" className="mr-4 font-bold text-white hover:text-green-300">
 						<FaGithub className="transform  text-3xl transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110" />
 					</a>
 					<a
 						href={project.link}
 						target="_blank"
+						title="Website Link"
 						rel="noopener noreferrer"
 						className="transform rounded px-4 py-2 font-bold text-white transition duration-500 ease-in-out hover:-translate-y-1 hover:scale-110 hover:text-green-300"
 					>

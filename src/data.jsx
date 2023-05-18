@@ -1,7 +1,13 @@
 export const projects = [
 	{
 		title: 'Storage App',
-		technologies: ['Ejs', 'Bootstrap', 'Express', 'Node.js', 'Mongoose', 'MongoDB'],
+		technologies: [
+			<i className="devicon-javascript-plain colored" title="JavaScript"></i>,
+			<i className="devicon-nodejs-plain colored" title="Node.js"></i>,
+			<i className="devicon-express-original " title="Express.js"></i>,
+			<i className="devicon-mongodb-plain colored" title="MongoDB"></i>,
+			<i className="devicon-bootstrap-plain colored" title="Bootstrap"></i>
+		],
 		description:
 			'Created a web application that enables companies to store and manage their product inventory through user registration and login. The application provides a user-friendly interface, allowing users to create, edit, and delete products along with associated images.',
 		images: ['./storage-app.png', './storage-app2.png'],
@@ -9,17 +15,6 @@ export const projects = [
 		repo: 'https://github.com/LucasCoppola/Storage-App',
 		page: '/storage-app'
 	}
-
-	// {
-	// 	title: 'DevChat',
-	// 	technologies: ['React', 'Express', 'Node.js', 'MongoDB'],
-	// 	description:
-	// 		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?',
-	// 	image: './project-3.gif',
-	// 	link: 'https://reactbootcamp.com',
-	// 	repo: '',
-	// 	page: ''
-	// }
 ]
 
 export const skillsData = [
