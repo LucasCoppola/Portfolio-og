@@ -36,7 +36,7 @@ const About = () => {
 										<div className="mb-3 flex items-center rounded-lg bg-gray-700 px-4 py-2">
 											<h2 className="text-base font-medium text-white md:font-light">{item.type}</h2>
 										</div>
-										<ul className="mt-2 text-gray-700 dark:text-gray-300 lg:ml-4 ">
+										<ul className="mt-2 text-gray-300 lg:ml-4 ">
 											{item.skills.map((skill, i) => {
 												return (
 													<li key={i} className=" mb-2 flex flex-row items-center justify-start" id="icon">
