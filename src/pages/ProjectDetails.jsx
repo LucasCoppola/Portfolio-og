@@ -36,8 +36,8 @@ const ProjectDetail = () => {
 				<div className="mt-4">
 					<h3 className="mb-2 text-lg font-bold">Technologies</h3>
 					<div className="flex flex-wrap">
-						{project.technologies.map((tech) => (
-							<p key={tech} className="mb-2 mr-2 inline-block rounded-full pr-4 pt-1 text-2xl text-white">
+						{project.technologies.map((tech, i) => (
+							<p key={i} className="mb-2 mr-2 inline-block rounded-full pr-4 pt-1 text-2xl text-white">
 								{tech}
 							</p>
 						))}
