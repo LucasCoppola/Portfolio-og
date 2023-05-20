@@ -9,7 +9,11 @@ export default {
 			xl: '1200px',
 			'2xl': '1400px'
 		},
-		extend: {}
+		extend: {
+			colors: {
+				'custom-color': '#BEC3CB'
+			}
+		}
 	},
 	plugins: []
 }

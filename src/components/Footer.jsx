@@ -10,7 +10,7 @@ function Footer() {
 						href="https://github.com/LucasCoppola"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="text-gray-400 transition-colors duration-300 hover:text-white"
+						className=" transition-colors duration-300 hover:text-white"
 					>
 						<span className="sr-only">GitHub</span>
 						<FaGithub className="h-6 w-6" />
@@ -19,13 +19,13 @@ function Footer() {
 						href="https://linkedin.com/in/lucas-coppola-1805ab226"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="text-gray-400 transition-colors duration-300 hover:text-white"
+						className=" transition-colors duration-300 hover:text-white"
 					>
 						<span className="sr-only">LinkedIn</span>
 						<FaLinkedin className="h-6 w-6" />
 					</a>
 				</div>
-				<p className="mt-8 text-center text-sm text-gray-400">
+				<p className="mt-8 text-center text-sm ">
 					Designed &amp; built by <span className="text-green-300">Lucas Coppola</span> © 2023
 				</p>
 			</div>

@@ -19,14 +19,14 @@ const Contact = () => {
 			<div className="container mx-auto">
 				<div className="mx-auto mb-10 max-w-md">
 					<h2 className="mb-6 text-center text-3xl font-bold">Contact</h2>
-					<p className="text-center text-gray-400">
+					<p className="text-center ">
 						Get in touch or shoot me an email directly at <span className="text-green-300">lucascoppola21@gmail.com</span>
 					</p>
 				</div>
 				<div className="mx-auto max-w-md">
 					<form action="https://formsubmit.co/6dd7975fb11f839145a3587c0ee35723" method="post" onSubmit={onSubmit}>
 						<div className="mb-4">
-							<label htmlFor="name" className="mb-2 block font-medium text-gray-400">
+							<label htmlFor="name" className="mb-2 block font-medium ">
 								Name
 							</label>
 							<input
@@ -34,7 +34,7 @@ const Contact = () => {
 								id="name"
 								name="name"
 								placeholder="John Doe"
-								className="form-input w-full rounded-md bg-gray-800 px-4 py-2 text-gray-400"
+								className="form-input w-full rounded-md bg-gray-800 px-4 py-2 "
 								{...register('name', { required: true, maxLength: 80 })}
 							/>
 							{errors.name && (
@@ -45,7 +45,7 @@ const Contact = () => {
 							)}
 						</div>
 						<div className="mb-4">
-							<label htmlFor="email" className="mb-2 block font-medium text-gray-400">
+							<label htmlFor="email" className="mb-2 block font-medium ">
 								Email
 							</label>
 							<input
@@ -53,7 +53,7 @@ const Contact = () => {
 								id="email"
 								name="email"
 								placeholder="johndoe@example.com"
-								className="form-input w-full rounded-md bg-gray-800 px-4 py-2 text-gray-400"
+								className="form-input w-full rounded-md bg-gray-800 px-4 py-2 "
 								{...register('email', { required: true, min: 4, maxLength: 64, pattern: /^\S+@\S+$/i })}
 							/>
 							{errors.email && (
@@ -64,7 +64,7 @@ const Contact = () => {
 							)}
 						</div>
 						<div className="mb-4">
-							<label htmlFor="message" className="mb-2 block font-medium text-gray-400">
+							<label htmlFor="message" className="mb-2 block font-medium ">
 								Message
 							</label>
 							<textarea
@@ -72,7 +72,7 @@ const Contact = () => {
 								name="message"
 								rows="4"
 								placeholder="Type your message here"
-								className="form-textarea w-full rounded-md border-gray-300 bg-gray-800 px-4 py-2 text-gray-400"
+								className="form-textarea w-full rounded-md border-gray-300 bg-gray-800 px-4 py-2 "
 								{...register('message', { required: true, maxLength: 320 })}
 							></textarea>
 							{errors.message && (

@@ -5,7 +5,7 @@ import { projects } from '../data'
 
 const Projects = () => {
 	return (
-		<section id="projects" className="body-font overflow-hidden text-gray-400">
+		<section id="projects" className="body-font overflow-hidden text-custom-color">
 			<div className="container mx-auto px-5 py-24">
 				<div className=" flex w-full flex-wrap">
 					<div className="mb-6 w-full lg:mb-0">
@@ -18,7 +18,7 @@ const Projects = () => {
 							<img className="block w-full rounded-lg" src={project.images[0]} alt={project.title} />
 							<div className="mt-4 md:mt-0">
 								<h2 className="mb-4 text-2xl font-extrabold tracking-tight text-white">{project.title}</h2>
-								<p className="mb-6 font-light text-gray-400 sm:text-xs lg:text-base">{project.description}</p>
+								<p className="mb-6 font-light sm:text-xs lg:text-base">{project.description}</p>
 								<div>
 									{project.technologies.map((technology, i) => (
 										<span key={i} className="inline-block rounded-full pb-3 pr-4 text-2xl text-white">

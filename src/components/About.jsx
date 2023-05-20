@@ -8,7 +8,7 @@ const About = () => {
 				<h1 className="mb-10 text-center text-3xl font-bold sm:text-4xl md:text-center lg:text-left">About Me</h1>
 				<div className="flex w-full flex-col md:flex-row md:justify-between">
 					<div className="mb-10 text-center md:w-1/2  md:pr-16 md:text-left">
-						<p className="mb-8 text-center text-base leading-relaxed  dark:text-gray-400 md:text-left">
+						<p className="mb-8 text-center text-base leading-relaxed md:text-left">
 							Hi! My name is Lucas and I'm a web developer with a passion for web development. I have experience working with a variety of
 							technologies, including JavaScript, React, Express, and more to create awesome web applications.
 							<br />

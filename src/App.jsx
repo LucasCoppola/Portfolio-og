@@ -12,7 +12,7 @@ import Timeline from './pages/Timeline'
 const App = () => {
 	return (
 		<BrowserRouter>
-			<main className="body-font bg-gray-900 text-gray-400">
+			<main className="body-font bg-gray-900 text-custom-color">
 				<Navbar />
 				<Routes>
 					<Route
