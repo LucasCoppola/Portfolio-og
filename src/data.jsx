@@ -9,7 +9,7 @@ export const projects = [
 			<i className="devicon-bootstrap-plain colored" title="Bootstrap"></i>
 		],
 		description:
-			'Created a web application that enables companies to store and manage their product inventory through user registration and login. The application provides a user-friendly interface, allowing users to create, edit, and delete products along with associated images.',
+			'This application is designed for small companies to effectively manage their product inventory. It provides a user-friendly web-based platform for storing, organizing, and tracking products. Users can securely register and log in to create, edit, and delete product listings with associated images. The application offers a clean and intuitive interface for easy navigation and efficient product management.',
 		images: ['./storage-app.png', './storage-app2.png'],
 		link: 'https://storage-app-nmpn.onrender.com',
 		repo: 'https://github.com/LucasCoppola/Storage-App',
